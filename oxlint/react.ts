@@ -10,17 +10,12 @@ export default defineConfig({
   plugins: ['import', 'typescript', 'react'],
 
   rules: {
-    // https://oxc.rs/docs/guide/usage/linter/rules/react/self-closing-comp.html
     'react/self-closing-comp': 'error',
-
-    // https://oxc.rs/docs/guide/usage/linter/rules/react/jsx-boolean-value.html
     'react/jsx-boolean-value': ['error', 'never'],
 
-    // React Compiler-powered validation rules (use-memo, purity,
-    // immutability, set-state-in-render, static-components, etc.) are
-    // already turned on via `base.ts`'s `categories.correctness`, since
-    // they're bundled into the built-in `react` plugin — no separate
-    // `react-compiler` plugin needed.
-    // https://oxc.rs/blog/2026-08-18-react-compiler-support
+    // React Compiler-powered rules (use-memo, purity, immutability,
+    // set-state-in-render, static-components, etc.) are bundled into this
+    // `react` plugin and already turned on via `base.ts`'s
+    // `categories.correctness` — no separate `react-compiler` plugin needed.
   },
 })

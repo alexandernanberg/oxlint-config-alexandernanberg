@@ -15,10 +15,8 @@ export default defineConfig({
   },
 
   rules: {
-    // require let or const instead of var
     'no-var': 'error',
 
-    // require method and property shorthand syntax for object literals
     'object-shorthand': [
       'error',
       'always',
@@ -28,7 +26,6 @@ export default defineConfig({
       },
     ],
 
-    // detect variables that shadow variables in an outer scope
     'no-shadow': 'error',
 
     'no-unused-vars': [
@@ -44,13 +41,8 @@ export default defineConfig({
       },
     ],
 
-    // https://oxc.rs/docs/guide/usage/linter/rules/import/namespace.html
     'import/namespace': ['error', { allowComputed: true }],
-
-    // https://oxc.rs/docs/guide/usage/linter/rules/import/no-cycle.html
     'import/no-cycle': 'error',
-
-    // https://oxc.rs/docs/guide/usage/linter/rules/import/consistent-type-specifier-style.html
     'import/consistent-type-specifier-style': ['error', 'prefer-top-level'],
 
     // NOTE: `import/order` and `import/no-extraneous-dependencies` have no

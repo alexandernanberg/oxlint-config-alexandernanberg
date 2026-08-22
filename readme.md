@@ -40,10 +40,9 @@ rely on legacy options like `baseUrl` — see
 
 ## Known gaps vs. the ESLint config
 
-- `import/order` and `import/no-extraneous-dependencies` have no oxlint
-  equivalent yet. Import ordering is instead handled by oxfmt's
-  `sortImports` option.
-- `import/no-useless-path-segments` has no oxlint equivalent yet.
+oxlint has no equivalent yet for `import/order` (handled by oxfmt's
+`sortImports` instead), `import/no-extraneous-dependencies`, or
+`import/no-useless-path-segments`.
 
 ## License
 
