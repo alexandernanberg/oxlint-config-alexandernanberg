@@ -7,9 +7,6 @@ export default defineConfig({
   // default is 80; oxfmt's default is 100).
   printWidth: 80,
 
-  // Replaces `import/order` from oxlint/base.ts, which has no oxlint
-  // equivalent yet — import sorting is a formatter concern here instead of
-  // a lint rule.
   sortImports: {
     groups: [
       ['type-import', 'value-builtin', 'value-external'],

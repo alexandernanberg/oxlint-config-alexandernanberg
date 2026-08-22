@@ -45,10 +45,6 @@ export default defineConfig({
     'import/no-cycle': 'error',
     'import/consistent-type-specifier-style': ['error', 'prefer-top-level'],
 
-    // NOTE: `import/order` and `import/no-extraneous-dependencies` have no
-    // oxlint equivalent yet. Import ordering is instead handled by oxfmt's
-    // `sortImports` (see ../oxfmt/base.ts) rather than the linter.
-
     'typescript/consistent-type-imports': [
       'error',
       { prefer: 'type-imports', fixStyle: 'separate-type-imports' },
