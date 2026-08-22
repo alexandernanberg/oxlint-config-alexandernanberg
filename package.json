@@ -1,0 +1,49 @@
+{
+  "name": "oxlint-config-alexandernanberg",
+  "version": "0.0.0-semantically-released",
+  "description": "Oxlint and oxfmt config according to my personal preference",
+  "keywords": [
+    "oxc",
+    "oxfmt",
+    "oxlint",
+    "styleguide"
+  ],
+  "bugs": {
+    "url": "https://github.com/alexandernanberg/oxlint-config-alexandernanberg/issues"
+  },
+  "license": "MIT",
+  "author": "Alexander Nanberg <alex.nanberg@hotmail.com> (https://alexandernanberg.com)",
+  "repository": "github:alexandernanberg/oxlint-config-alexandernanberg",
+  "type": "module",
+  "exports": {
+    "./oxlint/base": "./oxlint/base.ts",
+    "./oxlint/react": "./oxlint/react.ts",
+    "./oxfmt/base": "./oxfmt/base.ts"
+  },
+  "scripts": {
+    "lint": "oxlint .",
+    "format": "oxfmt --write .",
+    "test": "pnpm run lint && tsc --noEmit"
+  },
+  "devDependencies": {
+    "oxfmt": "^0.64.0",
+    "oxlint": "^1.79.0",
+    "oxlint-tsgolint": "^7.0.2001",
+    "semantic-release": "^25.0.0",
+    "typescript": "^5.7.2"
+  },
+  "peerDependencies": {
+    "oxfmt": ">=0",
+    "oxlint": ">=1",
+    "oxlint-tsgolint": ">=7"
+  },
+  "peerDependenciesMeta": {
+    "oxfmt": {
+      "optional": true
+    },
+    "oxlint-tsgolint": {
+      "optional": true
+    }
+  },
+  "packageManager": "pnpm@10.30.3"
+}
