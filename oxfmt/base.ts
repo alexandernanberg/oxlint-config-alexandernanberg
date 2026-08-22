@@ -9,11 +9,19 @@ export default defineConfig({
 
   // Replaces `import/order` from oxlint/base.ts, which has no oxlint
   // equivalent yet — import sorting is a formatter concern here instead of
-  // a lint rule.
+  // a lint rule. Matches the tomtly monorepo's `.oxfmtrc.json`.
   sortImports: {
     groups: [
-      ['builtin', 'external', 'internal', 'subpath'],
-      ['parent', 'sibling', 'index'],
+      ['type-import', 'value-builtin', 'value-external'],
+      ['type-internal', 'value-internal'],
+      ['type-parent', 'type-sibling', 'type-index'],
+      ['value-parent', 'value-sibling', 'value-index'],
+      'unknown',
     ],
+    sortSideEffects: false,
+    partitionByNewline: false,
+    newlinesBetween: false,
   },
+
+  sortPackageJson: true,
 })
