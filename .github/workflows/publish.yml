@@ -42,6 +42,12 @@ jobs:
       - name: Run tests
         run: pnpm test
 
+      - name: Update npm
+        # OIDC trusted publishing requires npm >=11.5.1; the npm bundled
+        # with our .nvmrc's Node version is older and would silently skip
+        # OIDC, falling back to no auth at all (ENEEDAUTH).
+        run: npm install -g npm@latest
+
       - name: Publish package
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
