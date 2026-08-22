@@ -8,5 +8,7 @@ export default defineConfig({
   rules: {
     'react/self-closing-comp': 'error',
     'react/jsx-boolean-value': ['error', 'never'],
+    'react/rules-of-hooks': 'error',
+    'react/exhaustive-deps': 'warn',
   },
 })
