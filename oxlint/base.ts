@@ -64,7 +64,10 @@ export default defineConfig({
 
     'typescript/no-empty-object-type': ['error', { allowInterfaces: 'always' }],
 
-    'typescript/no-misused-promises': ['error', { checksVoidReturn: { attributes: false } }],
+    'typescript/no-misused-promises': [
+      'error',
+      { checksVoidReturn: { attributes: false } },
+    ],
 
     'typescript/no-unnecessary-condition': 'error',
   },
