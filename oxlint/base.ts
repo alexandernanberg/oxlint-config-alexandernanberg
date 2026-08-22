@@ -3,8 +3,6 @@ import { defineConfig } from 'oxlint'
 export default defineConfig({
   plugins: ['import', 'typescript'],
 
-  // Roughly equivalent to `eslint.configs.recommended` +
-  // `tseslint.configs.recommendedTypeChecked`.
   categories: {
     correctness: 'error',
   },
