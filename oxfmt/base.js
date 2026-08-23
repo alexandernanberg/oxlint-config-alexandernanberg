@@ -1,6 +1,5 @@
-import { defineConfig } from 'oxfmt'
-
-export default defineConfig({
+/** @type {import('oxfmt').OxfmtConfig} */
+export default {
   semi: false,
   singleQuote: true,
   printWidth: 80,
@@ -19,4 +18,4 @@ export default defineConfig({
   },
 
   sortPackageJson: true,
-})
+}

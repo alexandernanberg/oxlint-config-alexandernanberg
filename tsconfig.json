@@ -11,7 +11,8 @@
     "isolatedModules": true,
     "resolveJsonModule": true,
     "noEmit": true,
-    "allowImportingTsExtensions": true
+    "allowJs": true,
+    "checkJs": true
   },
   "include": ["."],
   "exclude": ["node_modules"]

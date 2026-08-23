@@ -14,11 +14,15 @@
   "license": "MIT",
   "author": "Alexander Nanberg <alex.nanberg@hotmail.com> (https://alexandernanberg.com)",
   "repository": "github:alexandernanberg/oxlint-config-alexandernanberg",
+  "files": [
+    "oxlint",
+    "oxfmt"
+  ],
   "type": "module",
   "exports": {
-    "./oxlint/base": "./oxlint/base.ts",
-    "./oxlint/react": "./oxlint/react.ts",
-    "./oxfmt/base": "./oxfmt/base.ts"
+    "./oxlint/base": "./oxlint/base.js",
+    "./oxlint/react": "./oxlint/react.js",
+    "./oxfmt/base": "./oxfmt/base.js"
   },
   "scripts": {
     "lint": "oxlint .",

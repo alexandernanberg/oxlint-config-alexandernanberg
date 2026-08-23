@@ -33,7 +33,7 @@ import config from 'oxlint-config-alexandernanberg/oxfmt/base'
 export default defineConfig(config)
 ```
 
-For type-aware rules (`options.typeAware`, enabled in `oxlint/base.ts`),
+For type-aware rules (`options.typeAware`, enabled in `oxlint/base.js`),
 also install `oxlint-tsgolint` and make sure your `tsconfig.json` doesn't
 rely on legacy options like `baseUrl` — see
 [Type-Aware Linting](https://oxc.rs/docs/guide/usage/linter/type-aware.html).
